@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: secure-demo
-  namespace: demo
+  name: slsa-demo
+  namespace: slsa-demo
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: secure-demo
+      app: slsa-demo
   template:
     metadata:
       labels:
-        app: secure-demo
+        app: slsa-demo
     spec:
       containers:
         - name: app
-          image: ghcr.io/<USERNAME>/secure-demo:latest
+          image: ghcr.io/kiku99/cosign-demo:latest
           ports:
-            - containerPort: 8080
+            - containerPort: 8080 
