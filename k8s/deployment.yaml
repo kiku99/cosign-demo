@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: app
-          image: kiku99/slsa:sha-457ba4b709742c6e6ae52edf08ac0fbf377aa583
+          image: docker.io/kiku99/slsa:v1
           ports:
             - containerPort: 8080 
