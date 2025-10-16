@@ -14,6 +14,9 @@ spec:
       verifyImages:
         - imageReferences:
             - "kiku99/slsa*"
+            - "docker.io/kiku99/slsa*"
+          required: true
+          verifyDigest: true
           attestors:
             - entries:
                 - keyless:
