@@ -10,6 +10,9 @@ func handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	fmt.Println("=================================")
+	fmt.Println("Starting SLSA Demo Application...")
+	fmt.Println("=================================")
 	http.HandleFunc("/", handler)
 	fmt.Println("Server running on :8080")
 	http.ListenAndServe(":8080", nil)
