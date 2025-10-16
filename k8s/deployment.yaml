@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: app
-          image: kiku99/slsa:sha-0f8f692e2b7421fefcb29dbafa056ef9954b319f
+          image: kiku99/slsa:test
           ports:
             - containerPort: 8080 
