@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: app
-          image: ghcr.io/kiku99/cosign-demo:latest
+          image: kiku99/slsa:latest
           ports:
             - containerPort: 8080 
