@@ -11,7 +11,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	fmt.Println("=================================")
-	fmt.Println("Starting SLSA Demo Application...!")
+	fmt.Println("Starting SLSA Demo Application... V2")
 	fmt.Println("=================================")
 	http.HandleFunc("/", handler)
 	fmt.Println("Server running on :8080")
